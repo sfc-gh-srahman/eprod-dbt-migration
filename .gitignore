@@ -1,0 +1,33 @@
+# Claude Code
+.cortex/plans/
+.cortex/sessions/
+
+# dbt artifacts (never commit these)
+dbt_snowflake/target/
+dbt_snowflake/logs/
+dbt/target/
+dbt/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.uv/
+
+# Node / pbir-cli
+node_modules/
+
+# Environment and credentials
+.env
+*.enc
+*.key
+credentials.json
+connections.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
