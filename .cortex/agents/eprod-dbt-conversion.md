@@ -1,11 +1,6 @@
 ---
 name: eprod-dbt-conversion
-description: >
-  Converts EProd gold-layer dbt models from Dremio dialect to Snowflake SQL.
-  Bootstraps conversion rules into the AIM rule engine in Snowflake, applies
-  them via a Tag-Convert-Restore workflow, and writes the results to
-  dbt_snowflake/models/marts/. Called by eprod-dbt-migration after Gate 0.
-  Triggers: dbt conversion, convert gold layer, dremio to snowflake models.
+description: "Converts EProd gold-layer dbt models from Dremio to Snowflake SQL via Tag-Convert-Restore. Bootstraps rules into the AIM rule engine, applies them, and writes to dbt_snowflake/models/marts/. Called by eprod-dbt-migration after Gate 0. Triggers: dbt conversion, convert gold layer, dremio to snowflake models."
 parent_skill: eprod-dbt-migration
 ---
 

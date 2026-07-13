@@ -1,11 +1,6 @@
 ---
 name: eprod-pbi-repointing
-description: >
-  Repoints Power BI PBIP reports from Dremio Gateway DSN to Snowflake.
-  Updates expressions.tmdl parameters, rewrites M queries for each table,
-  and optionally rebinds field references via pbir-cli if column names changed.
-  Called by eprod-dbt-migration after dbt conversion is confirmed.
-  Triggers: power bi repointing, pbi repoint, tmdl update, dremio to snowflake pbip.
+description: "Repoints Power BI PBIP reports from Dremio Gateway DSN to Snowflake. Updates expressions.tmdl parameters, rewrites M queries, and optionally rebinds field references via pbir-cli. Called by eprod-dbt-migration after dbt conversion is confirmed. Triggers: power bi repointing, pbi repoint, tmdl update, dremio to snowflake pbip."
 parent_skill: eprod-dbt-migration
 ---
 
