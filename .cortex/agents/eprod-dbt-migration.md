@@ -1,6 +1,6 @@
 ---
 name: eprod-dbt-migration
-description: "Converts EProd gold-layer dbt models from Dremio to Snowflake SQL and repoints Power BI PBIP reports. Rules live in the AIM rule engine (RULE_ENGINE.RULES). Triggers: dbt migration, dremio to snowflake, convert gold layer, repoint power bi, eprod migration, migrate dbt models."
+description: Converts EProd gold-layer dbt models from Dremio to Snowflake and repoints Power BI PBIP reports. Delegates to eprod-dbt-conversion and eprod-pbi-repointing. Triggers dbt migration dremio to snowflake convert gold layer repoint power bi eprod migration.
 ---
 
 # EProd dbt Migration Agent
