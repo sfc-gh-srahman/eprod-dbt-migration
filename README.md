@@ -243,9 +243,16 @@ The agent will ask which connection and which database should host the
 
 1. Copy all three agent files into your project's agents directory:
 
+   macOS / Linux:
    ```bash
    mkdir -p .cortex/agents
    cp eprod-dbt-migration/.cortex/agents/*.md .cortex/agents/
+   ```
+
+   Windows (PowerShell):
+   ```powershell
+   New-Item -ItemType Directory -Force -Path .cortex\agents
+   Copy-Item eprod-dbt-migration\.cortex\agents\*.md .cortex\agents\
    ```
 
 2. Open Claude Code from your project root (`NaturalGasAssets2`).
